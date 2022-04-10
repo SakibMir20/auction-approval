@@ -1,0 +1,121 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.header,
+#form,
+.button-wrap {
+	width: 70%;
+	margin: 0 auto;
+}
+.header {
+	background-color: #343a40;
+	padding: 10px;
+}
+.header input {
+	width: 100%;
+	padding: 7px 20px;
+	margin: 7px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	box-sizing: border-box;
+	font-size: 15px;
+}
+
+.cont {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.cont .input-wrap {
+	width: 48%;
+}
+.cont .input-wrap input,
+textarea {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+.cont .images-wrap {
+	width: 100%;
+}
+.cont .images-wrap .file {
+	opacity: 0;
+	width: 0.1px;
+	height: 0.1px;
+	position: absolute;
+}
+.cont .images-wrap label {
+	display: block;
+	position: relative;
+	width: 98%;
+	margin: 0 auto;
+	height: 50px;
+	border-radius: 25px;
+	background: linear-gradient(40deg, #ff6ec4, #7873f5);
+	box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	transition: transform 0.2s ease-out;
+}
+.cont .images-wrap .file:hover + label,
+.cont .images-wrap .file:focus + label {
+	transform: scale(1.02);
+}
+
+.button-wrap #submit-button {
+	width: 201px;
+	height: 53px;
+	display: block;
+	margin: 20px auto;
+	border: none;
+	outline: none;
+	background: #2f2f2f;
+	color: #fff;
+	font-size: 22px;
+	border-radius: 40px;
+	text-align: center;
+	box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.4);
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+#status {
+	font-size: 16px;
+	padding: 10px;
+}
+
+@media all and (max-width: 1000px) {
+	.header,
+	#form {
+		width: 90%;
+	}
+}
+
+@media all and (max-width: 500px) {
+	.header,
+	#form {
+		width: 95%;
+	}
+	.cont {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.cont .input-wrap {
+		width: 98%;
+	}
+}

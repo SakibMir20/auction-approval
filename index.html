@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<div>
+			<div class="header">
+				<div>
+					<input id="host-url" type="text" placeholder="Server url" value="https://seven-auction.herokuapp.com" />
+				</div>
+				<div>
+					<input id="token" type="text" placeholder="Authorization key" value="" />
+				</div>
+			</div>
+			<form action="" id="form" method="patch">
+				<div class="cont">
+					<div class="input-wrap">
+						<input id="id" type="text" placeholder="Auction id" value="Auction Id" />
+					</div>
+					<div class="input-wrap">
+						<select id="status">
+							<option class="options option-user" selected="selected" value="approved">Approved</option>
+							<option class="options option-admin" value="inprogress">Inprogress</option>
+							<option class="options option-admin" value="rejected">Rejected</option>
+						</select>
+					</div>
+				</div>
+			</form>
+			<div class="button-wrap">
+				<button id="submit-button">Submit</button>
+			</div>
+		</div>
+		<script src="./script.js"></script>
+	</body>
+</html>
